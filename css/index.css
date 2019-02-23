@@ -33,7 +33,17 @@ main {
 
     font-family: "Lato", sans-serif;
     font-size: 0.9em;
+    color: #4f4a47;
 }
+
+a {
+    color: #4f4a47;
+}
+
+a:hover {
+    color: #a9a496;
+}
+
 .card {
     max-width: 600px;
     margin: 0 auto;
@@ -46,6 +56,14 @@ h4 {
     font-weight: bold;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+}
+
+.button {
+    background-color: #f6ece1;
+
+    border-radius: 0.5em;
+    padding: 1em 2em;
+    margin-top: 1.5em;
 }
 
 ul, li {
