@@ -1,39 +1,98 @@
+/* width */
+::-webkit-scrollbar {
+    width: 6px !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ece3dd;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #d6c1ae;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #a9a496;
+}
+
 * {
     padding: 0;
     margin: 0;
 }
 
 body {
-    margin: 6em auto;
+
 }
 
-header {
+main {
+    margin: 3em 2.5em;
+
+    font-family: "Lato", sans-serif;
+    font-size: 0.9em;
+    color: #4f4a47;
+}
+
+footer {
     width: 100%;
     position: fixed;
-    top: 0;
+    bottom: 0;
     z-index: 1;
 
     background-color: #ece3dd;
-    border-bottom: 1px solid #d6c1ae;
-    padding: 1em 0 0.4em 0;
+    border-top: 1px solid #d6c1ae;
+    padding: 1em 0 1em 0;
     text-align: center;
 }
 
 h1 {
     color: #a9a496;
     font-family: "Raleway", sans-serif;
-    font-size: 1.5em;
+    font-size: 1.9em;
     font-weight: bold;
     letter-spacing: 0.4em;
     text-transform: uppercase;
 }
 
-main {
+article {
+    max-width: 400px;
+    margin: 0 auto 30em auto;
+}
+
+.article-header {
+    text-align: right;
+    padding-right: 2em;
+    border-bottom: 1px solid black;
+    margin-bottom: 2em;
+}
+
+h4 {
+    color: #d6c1ae;
+
+    font-family: "Raleway", sans-serif;
+    font-size: 1.6em;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.article-center {
+    text-align: center;
+}
+
+
+
+p {
     margin: 0 2em;
 
-    font-family: "Lato", sans-serif;
-    font-size: 0.9em;
-    color: #4f4a47;
+    font-size: 1.3em;
+}
+
+.preview {
+    width: 200px;
+    height: auto;
 }
 
 a {
@@ -44,26 +103,32 @@ a:hover {
     color: #a9a496;
 }
 
-.card {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-h4 {
-    color: #a9a496;
-    font-family: "Raleway", sans-serif;
-    font-size: 1.8em;
-    font-weight: bold;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-}
-
 .button {
     background-color: #f6ece1;
 
     border-radius: 0.5em;
-    padding: 1em 2em;
+    border: none;
+    padding: 0.5em 1em;
     margin-top: 1.5em;
+
+    font-size: 0.8em;
+
+    color: #a9a496;
+}
+
+#skills {
+    text-align: center;
+}
+
+.skills {
+    background-color: #f4f4f4;
+
+    padding: 0.8em 1.5em;
+    border-radius: 2em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+
+    color: #a9a496;
 }
 
 ul, li {
