@@ -23,12 +23,9 @@
     margin: 0;
 }
 
-body {
-
-}
-
 main {
-    margin: 3em 2.5em;
+    width: 400px;
+    margin: 3em auto;
 
     font-family: "Lato", sans-serif;
     font-size: 0.9em;
@@ -57,7 +54,7 @@ h1 {
 }
 
 article {
-    max-width: 400px;
+    min-width: 400px;
     margin: 0 auto 30em auto;
 }
 
@@ -85,7 +82,7 @@ h4 {
 
 
 p {
-    margin: 0 2em;
+    margin: 0 2em 1em 2em;
 
     font-size: 1.3em;
 }
@@ -117,7 +114,7 @@ a:hover {
 }
 
 #skills {
-    text-align: center;
+    text-align: right;
 }
 
 .skills {
@@ -135,6 +132,10 @@ ul, li {
     display: inline-block;
     padding: 0 0.4em;
     margin: 0
+}
+
+.social-media {
+    margin: 0 0.7em 0 0.7em;
 }
 
 @media screen {

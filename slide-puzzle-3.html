@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title>Slide Puzzle</title>
+    <link rel='stylesheet' href='css/slide-puzzle-3.css'>
+    <link rel='stylesheet' href='css/slide-puzzle-3A.css'>
+    <link rel='stylesheet' href='css/slide-puzzle-3B.css'>
+    <link rel='stylesheet' href='css/slide-puzzle-3C.css'>
+    <link rel='stylesheet' href='css/slide-puzzle-3D.css'>
+</head>
+<body>
+<h1 id='headline'>Slide Puzzle</h1>
+<h4 id='byline'>Use arrow keys (← ↑ ↓ →) to move tiles.
+</h4>
+<div class='container'>
+    <div class='row'>
+        <div id='place-00'></div>
+        <div id='place-01'></div>
+        <div id='place-02'></div>
+        <div id='place-03'></div>
+    </div>
+    <div class='row'>
+        <div id='place-04'></div>
+        <div id='place-05'></div>
+        <div id='place-06'></div>
+        <div id='place-07'></div>
+    </div>
+    <div class='row'>
+        <div id='place-08'></div>
+        <div id='place-09'></div>
+        <div id='place-10'></div>
+        <div id='place-11'></div>
+    </div>
+    <div class='row'>
+        <div id='place-12'></div>
+        <div id='place-13'></div>
+        <div id='place-14'></div>
+        <div id='place-15'></div>
+    </div>
+</div>
+<div class='container'>
+    <div class='row'>
+        <div class='info' id='info'>
+            <strong>Moves:</strong> 0
+        </div>
+        <div class='info'>
+            <button id='shuffle' class='shuffle'
+                    onClick='window.location.reload()'>Shuffle</button>
+        </div>
+    </div>
+</div>
+<!--<div class='container'>-->
+    <!--<div class='row'>-->
+        <!--<div class='info'>-->
+            <!--<button id='almostSolved' class='shuffle'>-->
+                <!--Test Solve Functionality</button>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<div class='youWon'>
+
+</div>
+
+<script src='https://code.jquery.com/jquery-3.3.1.js'></script>
+<script src='js/slide-puzzle-3.js'></script>
+</body>
+</html>
