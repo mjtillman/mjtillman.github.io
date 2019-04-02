@@ -4,10 +4,10 @@
     <meta charset='UTF-8'>
     <title>Slide Puzzle</title>
     <link rel='stylesheet' href='css/slide-puzzle.css'>
-    <link rel='stylesheet' href='css/slide-puzzle.css'>
-    <link rel='stylesheet' href='css/slide-puzzle.css'>
-    <link rel='stylesheet' href='css/slide-puzzle.css'>
-    <link rel='stylesheet' href='css/slide-puzzle.css'>
+    <link rel='stylesheet' href='css/slide-puzzle-A.css'>
+    <link rel='stylesheet' href='css/slide-puzzle-B.css'>
+    <link rel='stylesheet' href='css/slide-puzzle-C.css'>
+    <link rel='stylesheet' href='css/slide-puzzle-D.css'>
 </head>
 <body>
 <h1 id='headline'>Slide Puzzle</h1>
@@ -44,15 +44,14 @@
         <div class='info' id='info'>
             <strong>Moves:</strong> 0
         </div>
-        <div class='info'>
-            <button id='shuffle' class='shuffle'
-                    onClick='window.location.reload()'>Shuffle</button>
-            <button id='new-puzzle' class='shuffle'
-                    onClick='window.location.reload()'>Change Puzzle</button>
-        </div>
     </div>
     <div class="row">
-        <div><a href="index.html">< Return to Main</a></div>
+        <div>
+            <button id='shuffle' class='shuffle'
+                    onClick='window.location.reload()'>Shuffle</button>
+            <button id='new-puzzle' class='shuffle'>Change Puzzle</button>
+            <button id='back' class='shuffle'>Return to Main</button>
+        </div>
     </div>
 </div>
 <!--<div class='container'>-->
@@ -69,6 +68,6 @@
 </div>
 
 <script src='https://code.jquery.com/jquery-3.3.1.js'></script>
-<script src='js/slide-puzzle-3.js'></script>
+<script src='js/slide-puzzle.js'></script>
 </body>
 </html>

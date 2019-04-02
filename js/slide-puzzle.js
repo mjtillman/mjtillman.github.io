@@ -144,10 +144,10 @@ let game = {
 
     whichPuzzle: selectPuzzle(),
 
-    infoA: '<em>Mona Lisa</em><br><strong>by:</strong>Leonardo da Vinci, c 1500, Italy',
-    infoB: '<em>Mona Lisa</em><br><strong>by:</strong>Leonardo da Vinci, 1300, Italy',
-    infoC: '<em>The Arnolfini Portrait</em><br><strong>by:</strong>Jan van Eyck, 1434, Netherlands',
-    infoD: '<em>Untitled</em><br><strong>by:</strong>Jackson Pollack, 1954, United States'
+    infoA: '<em>Mona Lisa</em><br>Leonardo da Vinci, c 1500, Italy',
+    infoB: '<em>Mona Lisa</em><br>Leonardo da Vinci, 1300, Italy',
+    infoC: '<em>The Arnolfini Portrait</em><br>Jan van Eyck, 1434, Netherlands',
+    infoD: '<em>Untitled</em><br>Jackson Pollack, 1954, United States'
 
 };
 

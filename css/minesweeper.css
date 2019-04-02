@@ -1,0 +1,42 @@
+* {
+    border: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.container {
+    width: 260px;
+    margin: 0 auto;
+}
+
+.row {
+    width: 260px;
+}
+
+h1 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+
+#minefield {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.field {
+    width: 30px;
+    height: 30px;
+    background-color: cornflowerblue;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    float: left;
+}
+
+.field:hover {
+    background-color: yellow;
+}
