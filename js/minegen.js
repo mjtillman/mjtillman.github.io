@@ -254,7 +254,18 @@ const clueGen = (minefield, max) => {
   for (let clue of outerClues.bottom) { clueRow.push(clue); }
   mineClues.push(clueRow);
 
+  allTheBlanks(mineClues, max);
   return mineClues;
+};
+
+const allTheBlanks = (clues, max)  => {
+  for (let y = 0; y < max; y++) {
+    for (let x = 0; x < max; x++) {
+      if (clues[y][x] === '.') {
+        console.log(`[${y}, ${x}]`);
+      }
+    }
+  }
 };
 
 const countSquares = (squares) => {
@@ -262,6 +273,8 @@ const countSquares = (squares) => {
   for (let square of squares) { if (square === 'X') count++; }
   return (count > 0) ? count : '.';
 };
+
+/////////////////////////////////////////////////////////////////////////////////////////
 
 const displayField = (clues, rows, cols) => {
   let minePlots = {

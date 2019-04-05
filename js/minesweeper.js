@@ -1,10 +1,13 @@
-
+"use strict";
 
 const setField = (mines, clues, rows, cols) => {
 
   const minefield = document.getElementById('minefield');
   const fieldPlots = displayField(clues, rows, cols);
   minefield.innerHTML = fieldPlots.displayString;
+  let mineCounter = document.getElementById(`mine-counter`);
+  let minesLeft = mines.length
+  mineCounter.innerHTML = ' ' + minesLeft;
 
   for (let y = 0; y < rows; y++) {
     for (let x = 0; x < cols; x++) {
@@ -21,11 +24,17 @@ const setField = (mines, clues, rows, cols) => {
   }
 
   fieldPlots.plots.forEach((plot) => {
+    plot.plot.addEventListener("contextmenu", function () {
+      plot.plot.innerHTML = `<i class="fas fa-flag"></i>`;
+    });
+
+
     switch (plot.clue) {
       case 'X':
         plot.plot.addEventListener("click", function () {
           for (let mine of minePlots) {
             mine.style['background-color'] = 'red';
+ZzAAA            mine.innerHTML = `<i class="fas fa-bomb"></i>`;
           }
           console.log(`YOU LOSE, GOOD DAY SIR`);
         });
@@ -43,7 +52,8 @@ const setField = (mines, clues, rows, cols) => {
     }
   });
 
-};
+
+}
 
 const main = () => {
   let mineNum = 10;
